@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Great Balemeri in Kaliro [GBK]</title>
+<meta name="description" content="The Great Balemeri in Kaliro — community, projects and membership." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#e6f8ea;
+    --g1:#2a8f4a;
+    --g2:#1f6d3a;
+    --gold:#d4b24a;
+    --card: rgba(255,255,255,0.06);
+    --muted:#a6b6a8;
+    --accent: linear-gradient(90deg,var(--gold),#c9a83f);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,var(--g1),#0b3a1c);color:#f4fbf6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .brand img{width:84px;height:84px;object-fit:contain;border-radius:10px;background:transparent}
+  .brand h1{margin:0;font-size:20px;line-height:1;color:#fff}
+  .slogan{color:var(--muted);font-size:13px;margin-top:4px}
+  nav{display:flex;gap:14px;align-items:center}
+  nav a{color:#e9f7ee;text-decoration:none;font-weight:600}
+  .cta{background:#f0db7c;color:#1b2b17;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+  /* Hero */
+  .hero{display:flex;gap:28px;align-items:center;padding:36px 0}
+  .hero-left{flex:1}
+  h2{font-size:34px;margin:6px 0 8px;line-height:1.02;text-shadow:0 2px 0 rgba(0,0,0,0.2)}
+  p.lead{color:var(--muted);max-width:60ch}
+  .hero-visual{width:360px;max-width:40%}
+  .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+  /* Executive */
+  .members-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:12px}
+  .member{background:linear-gradient(180deg,rgba(0,0,0,0.15),transparent);padding:12px;border-radius:12px;text-align:center}
+  .avatar{width:86px;height:86px;border-radius:50%;display:inline-block;object-fit:cover;background:#eae6d0}
+  .member h4{margin:8px 0 4px}
+  .muted{color:var(--muted)}
+  /* Sections */
+  section{margin-top:28px}
+  ul.events{list-style:none;padding:0;margin:0}
+  li.event{padding:12px;border-radius:10px;background:rgba(0,0,0,0.12);margin-bottom:10px}
+  /* Subscription */
+  .subscription{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+  .pay-btn{background:linear-gradient(90deg,#f0db7c,#d4b24a);color:#14260f;padding:12px 16px;border-radius:10px;border:0;font-weight:700}
+  .info{color:var(--muted);font-size:14px}
+  form.contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+  input,textarea,button{font-family:inherit}
+  input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit}
+  textarea{grid-column:1/-1;min-height:110px}
+  button.submit{padding:10px;border-radius:8px;border:0;background:linear-gradient(90deg,#c9a83f,#f0db7c);font-weight:700}
+  footer{padding:24px 0;color:var(--muted);font-size:13px}
+  @media(max-width:880px){
+    .hero{flex-direction:column;align-items:flex-start}
+    .hero-visual{width:100%;max-width:100%}
+    nav{display:none}
+    form.contact{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="logo.png" alt="GBK logo" />
+        <div>
+          <h1>The Great Balemeri in Kaliro [GBK]</h1>
+          <div class="slogan">When we come together, we can be one</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#executive">Executive</a>
+        <a href="#projects">Projects</a>
+        <a href="#subscription">Subscription</a>
+        <a href="#contact" class="cta">Join Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="eyebrow muted">WELCOME</div>
+          <h2>The Great Balemeri in Kaliro — community, unity, progress</h2>
+          <p class="lead">We bring people together to support each other and drive projects that benefit our members and the wider Kaliro community. Join us — when we come together, we can be one.</p>
+          <div style="margin-top:16px">
+            <a href="#subscription" class="pay-btn">Pay Subscription</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="card" style="display:flex;flex-direction:column;align-items:center;gap:10px">
+            <img src="logo.png" alt="GBK logo" style="width:200px;height:200px;object-fit:contain" />
+            <div style="text-align:center">
+              <div class="muted">Next meeting</div>
+              <div style="font-weight:700;margin-top:6px">Nov 15, 2025 — Kaliro Town Hall</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h3>About GBK</h3>
+          <p class="muted">The Great Balemeri in Kaliro (GBK) is a unifying group focused on mutual support, community projects, and member development. We organize events, run income-generating projects and maintain a culture of unity and service.</p>
+        </div>
+      </section>
+
+      <section id="executive">
+        <h3 style="margin-bottom:8px">Executive Committee</h3>
+        <div class="members-grid">
+          <div class="member"><img class="avatar" src="logo.png" alt=""><h4>Mutasa Yoweri</h4><div class="muted">Chairperson</div></div>
+          <div class="member"><img class="avatar" src="logo.png" alt=""><h4>Mpola Joseph</h4><div class="muted">Secretary</div></div>
+          <div class="member"><img class="avatar" src="logo.png" alt=""><h4>Waira Emmanuel</h4><div class="muted">Treasurer</div></div>
+          <div class="member"><img class="avatar" src="logo.png" alt=""><h4>Waira Alex Yeeko</h4><div class="muted">Moderator</div></div>
+          <div class="member"><img class="avatar" src="logo.png" alt=""><h4>Others</h4><div class="muted">Human Resource</div></div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h3 style="margin-bottom:8px">Our Projects</h3>
+        <div class="card">
+          <ul class="events">
+            <li class="event"><strong>Tent Project</strong> <div class="muted">Completed</div><div class="muted small">A community tent project that serves events and rents out to support GBK activities.</div></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="subscription">
+        <h3>Member Subscription</h3>
+        <div class="card subscription">
+          <div style="flex:1">
+            <p class="info">Pay your subscription using mobile money to one of the following accounts. After payment, confirm below so our treasurer can mark you as paid.</p>
+            <p class="info"><strong>MTN:</strong> +256701893192<br><strong>Airtel:</strong> 0765401122</p>
+            <p class="info">For assistance call or WhatsApp the numbers above.</p>
+            <div style="margin-top:10px">
+              <!-- For now the button links to the phone number via tel: — mobile devices will prompt the call app -->
+              <a class="pay-btn" href="tel:+256701893192">Call MTN Number</a>
+              <a class="pay-btn" style="margin-left:8px" href="tel:+256765401122">Call Airtel Number</a>
+            </div>
+          </div>
+
+          <div style="min-width:320px">
+            <form class="contact" onsubmit="handleSubscription(event)">
+              <input type="text" name="name" placeholder="Full name" required />
+              <input type="text" name="phone" placeholder="Phone used for payment" required />
+              <textarea name="reference" placeholder="Amount paid / Transaction reference" required></textarea>
+              <button class="submit" type="submit">Confirm Payment</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h3>Contact & Join GBK</h3>
+        <div class="card" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div>
+            <p class="muted">For assistance call or WhatsApp: <strong>+256701893192 / 0765401122</strong></p>
+            <p class="muted">Email: <a href="mailto:thegreatbalemeri@gmail.com" style="color:inherit;text-decoration:underline">thegreatbalemeri@gmail.com</a></p>
+          </div>
+          <div>
+            <form onsubmit="handleContact(event)" style="display:grid;gap:8px">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Your email" required />
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>© <span id="year"></span> The Great Balemeri in Kaliro [GBK]</div>
+        <div class="muted">Built with care for GBK</div>
+      </div>
+    </footer>
+  </div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function handleContact(e){
+  e.preventDefault();
+  const n = e.target.name.value.trim();
+  alert('Thanks ' + n + '! Message received — GBK team will respond.');
+  e.target.reset();
+}
+function handleSubscription(e){
+  e.preventDefault();
+  const n = e.target.name.value.trim();
+  alert('Thank you ' + n + '! Your subscription confirmation was submitted.');
+  e.target.reset();
+}
+</script>
+</body>
+</html>
