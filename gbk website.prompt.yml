@@ -1,0 +1,8 @@
+messages:
+  - role: system
+    content: create  for me a website for my group association of gbk
+  - role: user
+    content: 'Pull out the action items from this meeting transcript: {{input}}'
+model: openai/gpt-4.1-mini
+testData: []
+evaluators: []
